@@ -1,0 +1,13 @@
+HELP.md
+downloads/
+target/
+
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+.env
+.idea
+*.iws
+*.iml
+*.ipr

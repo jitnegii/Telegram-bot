@@ -1,0 +1,258 @@
+package com.github.jitnegii.ytspotbot.youtube.models;
+
+public class Format
+{
+    int itag;
+    String mimeType;
+    int bitrate;
+    int width;
+    int height;
+    double lastModified;
+    double contentLength;
+    String quality;
+    String qualityLabel;
+    String projectionType;
+    double averageBitrate;
+    double approxDurationMs;
+    int audioChannels;
+    int audioSampleRate;
+    String signatureCipher;
+    String audioQuality;
+    String url;
+    int fps;
+
+    boolean isAudio;
+    String thumbnail_url;
+    String title;
+    String author;
+    String extension;
+
+    public void isAudio(boolean isAudio){
+        this.isAudio = isAudio;
+    }
+
+    public boolean isAudio(){
+        return isAudio;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getExtension() {
+        return extension;
+    }
+
+    public void setExtension(String extension) {
+        this.extension = extension;
+    }
+
+
+
+    public String getThumbnailUrl() {
+        return thumbnail_url;
+    }
+
+    public void setThumbnailUrl(String thumbnail_url) {
+        this.thumbnail_url = thumbnail_url;
+    }
+
+
+
+    public void setFps(int fps) {
+        this.fps = fps;
+    }
+
+    public int getFps() {
+        return fps;
+    }
+
+    public void setItag(int itag)
+    {
+        this.itag = itag;
+    }
+
+    public int getItag()
+    {
+        return itag;
+    }
+
+    public void setMimeType(String mimeType)
+    {
+        this.mimeType = mimeType;
+    }
+
+    public String getMimeType()
+    {
+        return mimeType;
+    }
+
+    public void setBitrate(int bitrate)
+    {
+        this.bitrate = bitrate;
+    }
+
+    public int getBitrate()
+    {
+        return bitrate;
+    }
+
+    public void setWidth(int width)
+    {
+        this.width = width;
+    }
+
+    public int getWidth()
+    {
+        return width;
+    }
+
+    public void setHeight(int height)
+    {
+        this.height = height;
+    }
+
+    public int getHeight()
+    {
+        return height;
+    }
+
+    public void setLastModified(double lastModified)
+    {
+        this.lastModified = lastModified;
+    }
+
+    public double getLastModified()
+    {
+        return lastModified;
+    }
+
+    public void setContentLength(double contentLength)
+    {
+        this.contentLength = contentLength;
+    }
+
+    public double getContentLength()
+    {
+        return contentLength;
+    }
+
+    public void setQuality(String quality)
+    {
+        this.quality = quality;
+    }
+
+    public String getQuality()
+    {
+        return quality;
+    }
+
+    public void setQualityLabel(String qualityLabel)
+    {
+        this.qualityLabel = qualityLabel;
+    }
+
+    public String getQualityLabel()
+    {
+        return qualityLabel;
+    }
+
+    public void setProjectionType(String projectionType)
+    {
+        this.projectionType = projectionType;
+    }
+
+    public String getProjectionType()
+    {
+        return projectionType;
+    }
+
+    public void setAverageBitrate(double averageBitrate)
+    {
+        this.averageBitrate = averageBitrate;
+    }
+
+    public double getAverageBitrate()
+    {
+        return averageBitrate;
+    }
+
+    public void setApproxDurationMs(double approxDurationMs)
+    {
+        this.approxDurationMs = approxDurationMs;
+    }
+
+    public double getApproxDurationMs()
+    {
+        return approxDurationMs;
+    }
+
+    public void setAudioChannels(int audioChannels)
+    {
+        this.audioChannels = audioChannels;
+    }
+
+    public int getAudioChannels()
+    {
+        return audioChannels;
+    }
+
+    public void setAudioSampleRate(int audioSampleRate)
+    {
+        this.audioSampleRate = audioSampleRate;
+    }
+
+    public int getAudioSampleRate()
+    {
+        return audioSampleRate;
+    }
+
+    public void setSignatureCipher(String signatureCipher)
+    {
+        this.signatureCipher = signatureCipher;
+    }
+
+    public String getSignatureCipher()
+    {
+        return signatureCipher;
+    }
+
+    public void setAudioQuality(String audioQuality)
+    {
+        this.audioQuality = audioQuality;
+    }
+
+    public String getAudioQuality()
+    {
+        return audioQuality;
+    }
+
+    public void setUrl(String url)
+    {
+        this.url = url;
+    }
+
+    public String getUrl()
+    {
+        return url;
+    }
+
+    public boolean useCipher(){
+
+        return (signatureCipher !=null && signatureCipher.contains("s="));
+
+    }
+
+}
